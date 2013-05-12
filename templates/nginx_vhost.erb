@@ -1,0 +1,7 @@
+location /znc {
+	include proxy.conf;
+	include deny.conf;
+
+	rewrite /znc/(.*) /$1 break;
+	proxy_pass https://localhost:9999/;
+}
