@@ -14,12 +14,12 @@
 #
 class znc::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['znc', 'znc-extra', 'znc-python']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['znc', 'znc-extra', 'znc-python']
+  }
 
-	$enabled = true
+  $enabled = true
 
 }
